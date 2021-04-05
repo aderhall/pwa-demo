@@ -1,0 +1,16 @@
+{
+  "name": "PWA Demo Form",
+  "shortname": "PWADemo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8f7f0",
+  "theme_color": "#00770a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

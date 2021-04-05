@@ -1,0 +1,109 @@
+html {
+  background-color: #f8f7f0;
+  /*background-color: black;*/
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+main {
+  max-width: 750px;
+  padding: 1em;
+  margin: auto;
+}
+
+#js {
+  color: #35781a;
+}
+
+#offline-notif {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  
+  padding: 0.7em;
+  opacity: 0;
+  background-color: #000000;
+  border-radius: 5px;
+  color: orange;
+  font-size: 0.8em;
+  transition: opacity 0.2s;
+}
+#offline-notif.visible {
+  opacity: 0.8;
+}
+#offline-notif>svg {
+  width: 1.4em;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+form {
+  width: 100%;
+}
+
+form > div {
+  margin-top: 2em;
+}
+
+label {
+  margin-top: 1em;
+}
+
+.options > label {
+  display: block;
+}
+
+.text > label {
+  display: block;
+}
+
+.text > input {
+  margin-top: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7em;
+  font-size: inherit;
+  font-family: inherit;
+  /*height: 2.5em;*/
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1) inset;
+}
+
+.text > input:focus {
+  outline: 0;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px rgb(0, 119, 10);
+}
+
+input[type="submit"] {
+  margin-top: 2em;
+  padding: 0.7em;
+  background-color: transparent;
+  color: rgb(0, 119, 10);
+  font-family: inherit;
+  font-size: inherit;
+  border: 2px solid rgb(0, 119, 10);
+  border-radius: 5px;
+  box-shadow: 0 0 0 0 rgb(0, 119, 10);
+  cursor: pointer;
+  
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color:rgb(0, 119, 10);
+  color: white;
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgb(0, 119, 10);
+}
