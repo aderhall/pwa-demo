@@ -1,11 +1,11 @@
 const staticCacheName = "PWADemo";
 const assets = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/index.js",
-  "/icon.png",
-  "/manifest.json"
+  "./",
+  "./index.html",
+  "./style.css",
+  "./index.js",
+  "./icon.png",
+  "./manifest.json"
 ];
 let port;
 function postMessage(message) {
@@ -54,4 +54,4 @@ self.addEventListener("message", messageEvent => {
   if (messageEvent.data && messageEvent.data.type == "INIT_PORT") {
     port = messageEvent.ports[0];
   }
-})
+});

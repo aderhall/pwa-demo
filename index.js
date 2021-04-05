@@ -6,7 +6,7 @@ if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     // Register the service worker
     navigator.serviceWorker
-      .register("service_worker.js")
+      .register("./service_worker.js")
       .then(() => {
         document.getElementById("js").textContent = "[Verified: service worker registered successfully]";
       })
