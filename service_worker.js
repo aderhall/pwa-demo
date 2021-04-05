@@ -1,4 +1,4 @@
-const staticCacheName = "PWADemo";
+const staticCacheName = "PWADemo-Production";
 const assets = [
   "/",
   "/index.html",
